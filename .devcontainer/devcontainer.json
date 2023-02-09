@@ -1,0 +1,28 @@
+{
+
+  "name": "My Dev Container",
+
+  "build": {
+
+    "dockerfile": "Dockerfile",
+
+    "context": "."
+
+  },
+
+  "runArgs": [
+
+    "-p", "3000:3000",
+
+    "-v", "${PWD}:/workspace"
+
+  ],
+
+  "env": {
+
+    "PYTHON_VERSION": "3.11.2"
+
+  }
+
+}
+
